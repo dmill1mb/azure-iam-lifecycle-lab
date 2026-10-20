@@ -1,0 +1,12 @@
+terraform.tfvars
+*.tfvars
+!terraform.tfvars.example
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+crash.log
+crash.*.log
+aum-compliance-report.json
+
+# .terraform.lock.hcl is deliberately NOT ignored - commit it.
