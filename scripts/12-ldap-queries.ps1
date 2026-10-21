@@ -22,7 +22,7 @@
     - Disabled accounts are found with the bitwise matching rule 1.2.840.113556.1.4.803 against userAccountControl.
       The value 2 is the "account disabled" bit. The long number is the rule that tests a single bit.
     - Expected counts after a fresh onboarding: 5 Finance users, 10 HR or IT users, 3 managers, 5 members of SG-Finance,
-      and 0 disabled. The disabled count changes after 18-leaver-offboarding.ps1 is run for real.
+      and 2 disabled (Guest and krbtgt, which Windows disables by default). The disabled count rises after 18-leaver-offboarding.ps1 is run for real.
     - memberOf only lists direct memberships, not nested groups.
 
     PITFALLS

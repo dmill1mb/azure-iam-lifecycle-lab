@@ -36,19 +36,3 @@ variable "dc01_private_ip" {
   type        = string
   default     = "10.0.1.4"
 }
-
-variable "maintenance_start" {
-  description = "First patch window, format 'YYYY-MM-DD hh:mm'. Must be in the future or the apply fails."
-  type        = string
-}
-
-variable "maintenance_time_zone" {
-  type    = string
-  default = "Central Standard Time"
-}
-
-variable "maintenance_recurrence" {
-  description = "How often the window repeats, e.g. 'Week Sunday'."
-  type        = string
-  default     = "Week Sunday"
-}

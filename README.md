@@ -169,7 +169,6 @@ The point I had wrong at first: a non-authoritative restore alone does not bring
 ## Known loose ends
 
 - Resource names still carry an `aumlab` prefix from the lab this was cloned from. Cosmetic, but I'd rename them in the next clone.
-- `terraform.tfvars.example` still carries leftover maintenance-window variables from that lab.
 - The audit's privileged-group approval list is a config line, and it needs a human to own it.
 
 ## What I took from this

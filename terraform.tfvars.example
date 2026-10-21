@@ -1,15 +1,10 @@
 # Copy to terraform.tfvars (gitignored) and fill in real values.
 
 location              = "southcentralus"
-resource_group_name   = "rg-aumlab"
+resource_group_name   = "rg-iamlab"
 admin_username        = "labadmin"
 allowed_rdp_source_ip = "203.0.113.10" # yours: Invoke-RestMethod https://api.ipify.org
 vm_size               = "Standard_D2_v4"
 
-# First weekly patch window - MUST be in the future. Format "YYYY-MM-DD hh:mm"
-maintenance_start      = "2026-10-04 02:00"
-maintenance_time_zone  = "Central Standard Time"
-maintenance_recurrence = "Week Sunday"
-
 # admin_password is NOT set here. Per terminal:
-#   $env:TF_VAR_admin_password = "..."
+#   see the README (Read-Host -AsSecureString), never a plaintext value in a file.
